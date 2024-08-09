@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assets/images/front.svg" alt="">
+        </section>
+
+        <section id="calculadora">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora
+                </h1>
+                <div class="input-box">
+                    <label for="Valor-mes"> 
+                        Valor Inicial
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <input type="number" id="Valor-mes" required max ="10000">
+                    
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="valor-maximo"> 
+                        Valor Mensal 
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <input type="number" step="0.01" id="valor-maximo" required max ="10000">
+                     
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="taxa-juros"> 
+                        Taxa de Juros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <input type="number" step="0.01" id="taxa-juros" required max ="120">
+                        
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="meses-pretendido"> 
+                        Quantos meses ?
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <input type="number" step="0.01" id="meses-pretendido" required max ="1000">
+                       
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value">55</span>
+                            <span>Juros Recebidos</span>
+                        </div>
+                        <div id="description">
+                            <span>55</span>
+                        </div>
+                    
+
+                </div>
+
+                <div id="more-info">
+                   
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjn9eTgn9WHAxVFF7kGHUAUB5sQFnoECAgQAQ&url=https%3A%2F%2Fwww.poupou.com.br%2F&usg=AOvVaw018nGR-SjWN4XwWGzcd-v3&opi=89978449" target="_blank">Mais informações sobre a PouPou<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
